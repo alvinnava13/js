@@ -1,25 +1,26 @@
-function heehaw(x = prompt("Please enter a number."))
+function heehaw()
 {
+    let x = prompt("Please enter a number.")
     let num = parseInt(x);
 
     for (let i = 1; i <= num; i++)
     {
         if(i % 3 === 0 && i % 5 === 0)
         {
-            document.writeln("Hee Haw!" +"<br>");
+            console.log("Hee Haw!");
         }
-        if(i % 3 === 0)
+        else if(i % 3 === 0)
         {
-            document.writeln("Hee!" + "<br>");
+            console.log("Hee!");
         }
         else if(i % 5 === 0)
         {
-            document.writeln("Haw!" + "<br>");
+            console.log("Haw!");
 
         }
         else
         {
-            document.writeln(i + "<br>");
+            console.log(i);
         }
 
     }
