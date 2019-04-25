@@ -22,15 +22,6 @@ function arrayToObject(myArray)
         }
     }
 
-    /*for(let key in myArray)
-    {
-        let data = document.createElement("p");
-        let header = document.createElement("p");
-        header.innerText = "" + key;
-        data.innerText = myArray[key].toString();
-        document.body.appendChild(data);
-    }*/
-
     return entries;
 
 }
