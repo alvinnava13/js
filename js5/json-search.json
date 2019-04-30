@@ -1,0 +1,46 @@
+[
+  {
+    "name" : "George Washington",
+    "gender" : "M",
+    "born" : "February 22, 1732",
+    "died" : "December 14, 1799",
+    "father" : "Augustine Washington",
+    "mother" : "Mary Ball Washington"
+  },
+
+  {
+    "name" : "John Adams",
+    "gender" : "M",
+    "born" : "October 30, 1735",
+    "died" : "July 4, 1826",
+    "father" : "John Adams Sr.",
+    "mother" : "Susanna Boylston"
+  },
+
+  {
+    "name" : "Thomas Jefferson",
+    "gender" : "M",
+    "born" : "April 13, 1743",
+    "died" : "July 4, 1826",
+    "father" : "Peter Jefferson",
+    "mother" : "Jane Randolph Jefferson"
+  },
+
+  {
+    "name" : "James Madison",
+    "gender" : "M",
+    "born" : "March 16, 1751",
+    "died" : "June 28, 1836",
+    "father" : "James Madison Sr.",
+    "mother" : "Nelly Rose Conway Madison"
+  },
+
+  {
+    "name" : "James Monroe",
+    "gender" : "M",
+    "born" : "April 28, 1758",
+    "died" : "July 4, 1831",
+    "father" : "Spencer Monroe",
+    "mother" : "Elizabeth Jones Monroe"
+  }
+]
