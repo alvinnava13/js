@@ -1,26 +1,29 @@
 let btn = document.getElementById('search'); // button
-let name = document.getElementById('name'); // textbox
+let textName = document.getElementById('name'); // textbox
 let output = document.getElementById('output'); // output div
+let info = document.getElementById('info'); // info div
 
-btn.onclick = showResults;
+btn.onclick = search;
 
-function showResults()
+
+function search()
 {
-    $("#search").on('click', function(){
+    let searchName = $("#name").val();
 
-        let name = $("#name").val();
-        let output = $("#output");
+    $.getJSON("json-search.json", function(result){
+        let found = false;
 
-        $.getJSON('json-search.json', function(president){
-            output.html("<h3>" + name + "</h3>");
+        $.each(result, function(index, item){
+            if(item.name.toLowerCase().includes(searchName.toLowerCase())){
+                found = true;
 
-            $.each(president, function(value){
-                if(value.name.toLowerCase().includes(name.toLowerCase()))
-                {
-
-                }
-            });
-
+                $("#info").append('<p>Name: ' + item.name + '</p>');
+                $("#info").append('<p>Gender: ' + item.gender + '</p>');
+                $("#info").append('<p>Born: ' + item.born + '</p>');
+                $("#info").append('<p>Died: ' + item.died + '</p>');
+                $("#info").append('<p>Father: ' + item.father + '</p>');
+                $("#info").append('<p>Mother: ' + item.mother + '</p>');
+            }
         });
     });
 }
