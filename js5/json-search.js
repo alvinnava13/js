@@ -19,7 +19,7 @@ function search()
         // For each result returned...
         // Check to see if there are partial search matches and display full/partial matches
         $.each(result, function(index, item){
-            if(item.name.toLowerCase().includes(searchName.toLowerCase()))
+            if(item.name.toLowerCase().includes(searchName.toLowerCase()) && !searchName.empty())
             {
                 found = true;
 
